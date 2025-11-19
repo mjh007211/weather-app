@@ -9,7 +9,7 @@ import { DailyForecastCard } from "./components/DailyForecastCard";
 
 function App() {
   return (
-    <div className="h-full w-full bg-(--bg-color) font-dm-sans">
+    <div className="w-full bg-(--bg-color) font-dm-sans">
       <div className="lg:max-w-(--desktop-width) w-[90%] mx-auto pt-8 max-[667px]:pt-3 max-[667px]:w-[95%]">
         <header className="flex justify-between">
           <Logo />
@@ -17,7 +17,7 @@ function App() {
         </header>
 
         <div className="flex flex-col min-[668px]:items-center min-[668px]:text-center mt-10">
-          <h1 className="font-bricolage text-[50px] font-bold text-(--main-heading-color) max-[376px]:w-72 max-[376px]:mx-auto  max-[667px]:text-center">
+          <h1 className="font-bricolage text-[50px] font-bold text-(--main-heading-color) max-[376px]:w-72 max-[376px]:mx-auto  max-[668px]:text-center">
             How's the sky looking today?
           </h1>
           <div className="flex gap-2.5 mt-12 max-[667px]:flex-col">
@@ -26,13 +26,13 @@ function App() {
           </div>
         </div>
 
-        <div className="flex mt-8 gap-5">
-          <div className="">
+        <div className="flex max-[668px]:flex-col mt-8 gap-5 pb-16">
+          <div className="basis-[800px] max-[376px]:mx-auto">
             <CountryWeather />
             <WeatherDataCard />
             <DailyForecastCard />
           </div>
-          <div className="">
+          <div className="flex-1">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
             pariatur iusto, amet debitis blanditiis obcaecati possimus officia
             voluptates quisquam? Voluptas odit repellendus labore odio corrupti
