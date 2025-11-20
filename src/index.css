@@ -13,17 +13,22 @@
   --unit-dropdown-bg-color: #282a3a;
   --search-input-bg-color: #282a3a;
   --cards-bg-color: #282a3a;
-  --side-nav-bg-color: #2f3040;
+  --aside-bg-color: #282a3a;
   --unit-dropdown-hover-bg-color: #2f3040;
+  --unit-dropdown-list-hover-bg-color: #2f3040;
+  --unit-dropdown-list-separator-color: #2f3040;
   --search-input-hover-bg-color: #2f3040;
+  --aside-list-bg-color: #2f3040;
   --days-dropdown-bg-color: #3d3e52;
+  --aside-list-border-color: #3d3e52;
   --main-heading-color: #ffffff;
   --current-degree-color: #ffffff;
-  --side-nav-heading-color: #ffffff;
+  --aside-heading-color: #ffffff;
   --time-color: #ffffff;
-  --units-dropdown-text: #ffffff;
+  --units-dropdown-text-color: #ffffff;
   --search-input-text-color: #b2b3b8;
   --cards-heading-color: #b2b3b8;
+  --unit-dropdown-heading-color: #b2b3b8;
   --lowest-degree-color: #b2b3b8;
   --highest-degree-color: #d7d7dc;
   --day-month-year-color: #b2b3b8;
@@ -36,5 +41,6 @@
   --days-dropdown-menu-bg-color: #3d3e52;
   --daily-forecast-color: #ffffff;
   --weather-info-color: #d7d7dc;
+  --aside-degree-color: #d7d7dc;
   --days-degrees-color: #d7d7dc;
 }

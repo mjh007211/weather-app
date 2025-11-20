@@ -6,6 +6,7 @@ import { Button } from "./components/Button";
 import { CountryWeather } from "./components/CountryWeather";
 import { WeatherDataCard } from "./components/WeatherDataCard";
 import { DailyForecastCard } from "./components/DailyForecastCard";
+import { HourlyForecastAside } from "./components/HourlyForecastAside";
 
 function App() {
   return (
@@ -27,16 +28,13 @@ function App() {
         </div>
 
         <div className="flex max-[668px]:flex-col mt-8 gap-5 pb-16">
-          <div className="basis-[800px] max-[376px]:mx-auto">
+          <div className="flex-3 max-[376px]:mx-auto">
             <CountryWeather />
             <WeatherDataCard />
             <DailyForecastCard />
           </div>
           <div className="flex-1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-            pariatur iusto, amet debitis blanditiis obcaecati possimus officia
-            voluptates quisquam? Voluptas odit repellendus labore odio corrupti
-            atque officia rem quasi enim!
+            <HourlyForecastAside />
           </div>
         </div>
       </div>

@@ -4,8 +4,12 @@ import sunIcon from "../assets/icon-sunny.webp";
 
 export const CountryWeather = () => {
   return (
-    <div className="relative ">
-      <img className="min-[376px]:block hidden" src={weatherDesktopBG} alt="" />
+    <div className="relative">
+      <img
+        className="min-[376px]:block hidden w-full"
+        src={weatherDesktopBG}
+        alt=""
+      />
       <img className="max-[376px]:block hidden" src={weatherMobileBG} alt="" />
       <div className="absolute w-full  left-0 top-[50%] translate-y-[-50%] min-[376px]:pl-5 max-[376px]:top-14 max-[376px]:text-center max-[668px]:">
         <h2 className="text-(--country-city-color) w-full font-bold text-2xl">
