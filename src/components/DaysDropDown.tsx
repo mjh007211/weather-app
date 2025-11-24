@@ -13,27 +13,27 @@ export const DaysDropDown = () => {
         </Button>
       </DropdownMenu.Trigger>
       <DropdownMenu.Content className="!bg-(--unit-dropdown-bg-color) !text-(--units-dropdown-text-color)">
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Monday
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Tuesday
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Wednesday
         </DropdownMenu.Item>
 
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Thursday
         </DropdownMenu.Item>
 
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Friday
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Saturday
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Sunday
         </DropdownMenu.Item>
       </DropdownMenu.Content>

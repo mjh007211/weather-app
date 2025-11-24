@@ -15,27 +15,27 @@ export const UnitsDropDown = () => {
         </Button>
       </DropdownMenu.Trigger>
       <DropdownMenu.Content className="!bg-(--unit-dropdown-bg-color) !text-(--units-dropdown-text-color)">
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Switch to imperial
         </DropdownMenu.Item>
         <DropdownMenu.Item className="!text-(--unit-dropdown-heading-color) !text-[12px] hover:!bg-(--unit-dropdown-bg-color) ">
           Temperature
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Celsius (&#176;C)
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Fahrenheit (&#176;F)
         </DropdownMenu.Item>
         <DropdownMenu.Separator className="!bg-(--unit-dropdown-list-separator-color)" />
         <DropdownMenu.Item className="!text-(--unit-dropdown-heading-color) !text-[12px] hover:!bg-(--unit-dropdown-bg-color)">
           Wind Speed
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           km/h
         </DropdownMenu.Item>
 
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           mph
         </DropdownMenu.Item>
 
@@ -43,10 +43,10 @@ export const UnitsDropDown = () => {
         <DropdownMenu.Item className="!text-(--unit-dropdown-heading-color) !text-[12px] hover:!bg-(--unit-dropdown-bg-color)">
           Precipitation
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Millimeters (mm)
         </DropdownMenu.Item>
-        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color)">
+        <DropdownMenu.Item className="hover:!bg-(--unit-dropdown-list-hover-bg-color) !cursor-pointer">
           Inches (in)
         </DropdownMenu.Item>
       </DropdownMenu.Content>
