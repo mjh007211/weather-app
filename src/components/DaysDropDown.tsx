@@ -8,7 +8,9 @@ export const DaysDropDown = () => {
           className="!bg-(--days-dropdown-bg-color) !text-(--units-dropdown-text-color) !font-normal hover:!bg-(--search-input-hover-bg-color) !transition !duration-300 !cursor-pointer"
           variant="soft"
         >
-          wednesday
+          {new Date().toLocaleDateString("en-US", {
+            weekday: "long",
+          })}
           <DropdownMenu.TriggerIcon />
         </Button>
       </DropdownMenu.Trigger>

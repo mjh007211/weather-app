@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import weatherDesktopBG from "../assets/bg-today-large.svg";
 import weatherMobileBG from "../assets/bg-today-small.svg";
 import sunIcon from "../assets/icon-sunny.webp";
+import moonIcon from "../assets/ChatGPT Image Nov 29, 2025, 04_46_07 PM.png";
 
 type Props = {
   cityName: string;
   countryName: string;
   currentDate: string;
   currentTemp: number;
+  isDayOrNight: number;
 };
 
 export const CountryWeather = ({
@@ -15,6 +17,7 @@ export const CountryWeather = ({
   countryName,
   currentTemp,
   currentDate,
+  isDayOrNight,
 }: Props) => {
   const [todayDate, setTodayDate] = useState("");
 
@@ -62,10 +65,14 @@ export const CountryWeather = ({
         className="absolute right-0 min-[376px]:top-[50%] min-[376px]:translate-y-[-50%] min-[376px]:pr-5 max-[376px]:bottom-16 max-[376px]:left-1/2 
     max-[376px]:-translate-x-1/2"
       >
-        <div className="flex lg:gap-10 max-[376px]:gap-10  justify-center">
-          <img className="w-28 h-28" src={sunIcon} alt="" />
+        <div className="flex lg:gap-10 max-[376px]:gap-10 items-center justify-center">
+          {isDayOrNight ? (
+            <img className="w-36 h-36" src={sunIcon} alt="" />
+          ) : (
+            <img className="w-36 h-36" src={moonIcon} alt="" />
+          )}
           <span className="text-8xl text-(--current-degree-color) font-medium">
-            {currentTemp}&#176;
+            {Math.round(currentTemp)}&#176;
           </span>
         </div>
       </div>

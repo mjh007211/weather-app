@@ -8,21 +8,45 @@ import { HourlyForecastAside } from "./components/HourlyForecastAside";
 import { SearchForm } from "./components/SearchForm";
 import { useEffect, useState } from "react";
 
-export type WeatherData = {
+type WeatherData = {
   cityName: string;
   countryName: string;
-  current: object;
-  daily: object;
-  hourly: object;
+  current: {
+    time: string;
+    temperature_2m: number;
+    relative_humidity_2m: number;
+    is_day: number;
+    wind_speed_10m: number;
+  };
+  daily: {
+    temperature_2m_max: number[];
+    temperature_2m_min: number[];
+  };
+  hourly: {
+    time: string[];
+    temperature_2m: number[];
+  };
 };
 
 function App() {
   const [weatherData, setWeatherData] = useState<WeatherData>({
     cityName: "",
     countryName: "",
-    current: {},
-    daily: {},
-    hourly: {},
+    current: {
+      time: "",
+      temperature_2m: 0,
+      relative_humidity_2m: 0,
+      is_day: 0,
+      wind_speed_10m: 0,
+    },
+    daily: {
+      temperature_2m_max: [],
+      temperature_2m_min: [],
+    },
+    hourly: {
+      time: [],
+      temperature_2m: [],
+    },
   });
   const [isError, setIsError] = useState(false);
 
@@ -65,12 +89,24 @@ function App() {
                 countryName={weatherData?.countryName}
                 currentTemp={weatherData?.current?.temperature_2m}
                 currentDate={weatherData?.current?.time}
+                isDayOrNight={weatherData?.current?.is_day}
               />
-              <WeatherDataCard />
-              <DailyForecastCard />
+              <WeatherDataCard
+                currentTemp={weatherData?.current?.temperature_2m}
+                currentHumidity={weatherData?.current?.relative_humidity_2m}
+                currentWindSpeed={weatherData?.current?.wind_speed_10m}
+              />
+
+              <DailyForecastCard
+                maxTemps={weatherData?.daily?.temperature_2m_max}
+                minTemps={weatherData?.daily?.temperature_2m_min}
+              />
             </div>
             <div className="flex-1">
-              <HourlyForecastAside />
+              <HourlyForecastAside
+                hourlyTemps={weatherData?.hourly?.temperature_2m}
+                hourlyTime={weatherData?.hourly?.time}
+              />
             </div>
           </div>
         )}

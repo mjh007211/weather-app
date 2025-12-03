@@ -65,6 +65,7 @@ export const SearchForm = ({ setIsError, setWeatherData }: Props) => {
   const handleOnClick = (city) => {
     setInputValue(`${city.name}, ${city.country}`);
     setCitiesList([]);
+    console.log(city.name);
   };
 
   const fetchLocationWeather = async () => {
